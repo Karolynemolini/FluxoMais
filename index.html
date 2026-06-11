@@ -1,50 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluxo+</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluxo+</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-100">
+<body class="bg-slate-100 min-h-screen">
 
-    <div class="flex min-h-screen">
+  <header class="bg-blue-700 text-white p-6 shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold">Fluxo+</h1>
+        <p class="text-blue-100">Seu controle financeiro inteligente</p>
+      </div>
 
-        <!-- MENU LATERAL -->
-        <aside class="w-56 bg-white shadow-md p-6 flex flex-col justify-between">
-
-            <div>
-                <h1 class="text-2xl font-bold text-blue-800 mb-12">
-                    FLUXO +
-                </h1>
-
-                <nav class="space-y-4">
-                    <a class="block bg-blue-100 text-blue-800 font-bold p-3 rounded" href="#">Dashboard</a>
-                    <a class="block text-blue-800 font-bold p-3" href="#">Transações</a>
-                    <a class="block text-blue-800 font-bold p-3" href="#">Metas</a>
-                    <a class="block text-blue-800 font-bold p-3" href="#">Previsões</a>
-                    <a class="block text-blue-800 font-bold p-3" href="#">Perfil</a>
-                </nav>
-            </div>
-
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
-                <span class="font-bold text-sm">Karolyne</span>
-            </div>
-
-        </aside>
-
-        <!-- CONTEÚDO PRINCIPAL -->
-        <main class="flex-1 p-10">
-
-            <h2 class="text-3xl font-bold mb-8">Dashboard</h2>
-
-        </main>
-
+      <div class="bg-white text-blue-700 px-4 py-2 rounded-lg font-semibold">
+        Karolyne
+      </div>
     </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-500">Saldo Atual</p>
+        <h2 class="text-2xl font-bold">R$ 5.200,00</h2>
+        <p class="text-sm text-gray-500">Disponível em conta</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-500">Receita</p>
+        <h2 class="text-2xl font-bold text-green-600">R$ 2.300,00</h2>
+        <p class="text-sm text-gray-500">Este mês</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-500">Despesa</p>
+        <h2 class="text-2xl font-bold text-red-600">R$ 1.100,00</h2>
+        <p class="text-sm text-gray-500">Este mês</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-500">Previsão</p>
+        <h2 class="text-2xl font-bold text-blue-600">R$ 6.000,00</h2>
+        <p class="text-sm text-gray-500">Próximos 30 dias</p>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-xl shadow p-6 lg:col-span-2">
+        <h2 class="text-xl font-bold mb-6">Visão Geral</h2>
+
+        <div class="space-y-5">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-semibold text-green-600">Receitas</span>
+              <span>R$ 2.300,00</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-4">
+              <div class="bg-green-500 h-4 rounded-full w-3/4"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-semibold text-red-600">Despesas</span>
+              <span>R$ 1.100,00</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-4">
+              <div class="bg-red-500 h-4 rounded-full w-1/3"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-semibold text-blue-600">Saldo Previsto</span>
+              <span>R$ 6.000,00</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-4">
+              <div class="bg-blue-500 h-4 rounded-full w-5/6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">Transações Recentes</h2>
+          <button class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded">
+            Ver todas
+          </button>
+        </div>
+
+        <div class="space-y-4">
+          <div class="border-b pb-3">
+            <div class="flex justify-between">
+              <p class="font-bold text-green-600">Salário</p>
+              <p class="font-bold text-green-600">+ R$ 2.300,00</p>
+            </div>
+            <p class="text-sm text-gray-500">Receita • 22/04/2026</p>
+          </div>
+
+          <div class="border-b pb-3">
+            <div class="flex justify-between">
+              <p class="font-bold text-red-600">Supermercado</p>
+              <p class="font-bold text-red-600">- R$ 350,00</p>
+            </div>
+            <p class="text-sm text-gray-500">Alimentação • 21/04/2026</p>
+          </div>
+
+          <div class="border-b pb-3">
+            <div class="flex justify-between">
+              <p class="font-bold text-red-600">Aluguel</p>
+              <p class="font-bold text-red-600">- R$ 800,00</p>
+            </div>
+            <p class="text-sm text-gray-500">Moradia • 20/04/2026</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <p class="font-bold text-green-600">Freelance</p>
+              <p class="font-bold text-green-600">+ R$ 500,00</p>
+            </div>
+            <p class="text-sm text-gray-500">Receita • 18/04/2026</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-bold mb-4">Metas Financeiras</h2>
+
+        <div class="mb-5">
+          <div class="flex justify-between">
+            <p>Viagem</p>
+            <p class="font-bold">65%</p>
+          </div>
+          <div class="bg-gray-200 rounded-full h-4 mt-2">
+            <div class="bg-green-500 h-4 rounded-full w-2/3"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between">
+            <p>Reserva de emergência</p>
+            <p class="font-bold">100%</p>
+          </div>
+          <div class="bg-gray-200 rounded-full h-4 mt-2">
+            <div class="bg-blue-500 h-4 rounded-full w-full"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-bold mb-4">Alertas Financeiros</h2>
+
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded mb-4">
+          <p class="font-bold">Atenção aos gastos</p>
+          <p class="text-sm">Seu gasto com alimentação está próximo do limite mensal.</p>
+        </div>
+
+        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded">
+          <p class="font-bold">Previsão positiva</p>
+          <p class="text-sm">Sua economia prevista para os próximos 30 dias é de R$ 1.700,00.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-gray-500 p-6">
+    Fluxo+ © 2026 - Projeto Fintech FIAP
+  </footer>
 
 </body>
-</html>
+</html>S
