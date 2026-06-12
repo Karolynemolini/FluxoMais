@@ -91,7 +91,7 @@
 
       <div class="card">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="titulo">Transações Recentes</h2>
+          <h2 class="titulo mb-0">Transações Recentes</h2>
           <button class="bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-lg">Ver todas</button>
         </div>
 
@@ -131,11 +131,11 @@
       </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
       <div class="card">
         <h2 class="titulo">Metas Financeiras</h2>
 
-        <div class="mb-5">
+        <div class="mb-6">
           <div class="flex justify-between">
             <p>Viagem</p>
             <p class="font-bold">65%</p>
@@ -145,7 +145,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="mb-6">
           <div class="flex justify-between">
             <p>Reserva de emergência</p>
             <p class="font-bold">100%</p>
@@ -154,84 +154,56 @@
             <div class="bg-blue-500 h-4 rounded-full w-full"></div>
           </div>
         </div>
+
+        <div>
+          <div class="flex justify-between">
+            <p>Comprar um carro</p>
+            <p class="font-bold">40%</p>
+          </div>
+          <div class="barra mt-2">
+            <div class="bg-yellow-500 h-4 rounded-full w-2/5"></div>
+          </div>
+        </div>
       </div>
 
       <div class="card">
-        <h2 class="titulo">Alertas Financeiros</h2><section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+        <h2 class="titulo">Distribuição de Gastos</h2>
 
-  <div class="card">
-    <h2 class="titulo">Resumo do Mês</h2>
+        <div class="space-y-5 mb-6">
+          <div>
+            <div class="flex justify-between">
+              <span>Moradia</span>
+              <strong>R$ 800,00</strong>
+            </div>
+            <div class="barra mt-2">
+              <div class="bg-red-500 h-4 rounded-full w-3/4"></div>
+            </div>
+          </div>
 
-    <div class="space-y-4">
-      <div class="flex justify-between">
-        <span>Maior gasto</span>
-        <strong class="text-red-600">Aluguel</strong>
-      </div>
+          <div>
+            <div class="flex justify-between">
+              <span>Alimentação</span>
+              <strong>R$ 350,00</strong>
+            </div>
+            <div class="barra mt-2">
+              <div class="bg-yellow-500 h-4 rounded-full w-1/2"></div>
+            </div>
+          </div>
 
-      <div class="flex justify-between">
-        <span>Categoria mais usada</span>
-        <strong>Alimentação</strong>
-      </div>
-
-      <div class="flex justify-between">
-        <span>Economia prevista</span>
-        <strong class="text-green-600">R$ 1.700,00</strong>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 class="titulo">Gastos por Categoria</h2>
-
-    <div class="space-y-4">
-      <div>
-        <div class="flex justify-between">
-          <span>Moradia</span>
-          <strong>R$ 800,00</strong>
+          <div>
+            <div class="flex justify-between">
+              <span>Transporte</span>
+              <strong>R$ 120,00</strong>
+            </div>
+            <div class="barra mt-2">
+              <div class="bg-blue-500 h-4 rounded-full w-1/4"></div>
+            </div>
+          </div>
         </div>
-        <div class="barra mt-2">
-          <div class="bg-red-500 h-4 rounded-full w-3/4"></div>
-        </div>
-      </div>
 
-      <div>
-        <div class="flex justify-between">
-          <span>Alimentação</span>
-          <strong>R$ 350,00</strong>
-        </div>
-        <div class="barra mt-2">
-          <div class="bg-yellow-500 h-4 rounded-full w-1/2"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 class="titulo">Simulação de Gasto</h2>
-
-    <p class="text-gray-500 mb-4">
-      Simule o impacto de uma nova compra no saldo.
-    </p>
-
-    <div class="bg-slate-100 p-4 rounded-xl">
-      <p>Compra simulada: <strong>Notebook</strong></p>
-      <p>Valor: <strong>R$ 3.000,00</strong></p>
-      <p class="font-bold text-red-600 mt-2">
-        Novo saldo: R$ 2.200,00
-      </p>
-    </div>
-  </div>
-
-</section>
-
-        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded mb-4">
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
           <p class="font-bold">Atenção aos gastos</p>
-          <p class="text-sm">Seu gasto com alimentação está próximo do limite mensal.</p>
-        </div>
-
-        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded">
-          <p class="font-bold">Previsão positiva</p>
-          <p class="text-sm">Sua economia prevista para os próximos 30 dias é de R$ 1.700,00.</p>
+          <p class="text-sm">A categoria alimentação está próxima do limite mensal.</p>
         </div>
       </div>
     </section>
