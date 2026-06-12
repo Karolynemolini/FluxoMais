@@ -54,36 +54,48 @@
 
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div class="card lg:col-span-2">
-        <h2 class="titulo">Visão Geral</h2>
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="titulo mb-0">Visão Geral</h2>
 
-        <div class="space-y-6">
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="font-bold text-green-600">Receitas</span>
-              <span>R$ 2.300,00</span>
-            </div>
-            <div class="barra">
-              <div class="bg-green-500 h-4 rounded-full w-3/4"></div>
-            </div>
+          <div class="flex gap-6 text-sm font-semibold">
+            <span class="text-green-600">● Receitas</span>
+            <span class="text-red-600">● Despesas</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="flex justify-between text-sm text-gray-500 mb-2">
+            <span>01/04</span>
+            <span>30/04</span>
           </div>
 
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="font-bold text-red-600">Despesas</span>
-              <span>R$ 1.100,00</span>
-            </div>
-            <div class="barra">
-              <div class="bg-red-500 h-4 rounded-full w-1/3"></div>
-            </div>
+          <div class="relative h-52 border-b border-slate-200">
+            <svg class="absolute w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polyline
+                fill="none"
+                stroke="#22c55e"
+                stroke-width="3"
+                points="0,90 10,70 20,65 30,45 40,40 50,38 60,25 70,20 80,18 90,15 100,5"/>
+            </svg>
+
+            <svg class="absolute w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polyline
+                fill="none"
+                stroke="#ef4444"
+                stroke-width="3"
+                points="0,92 10,92 20,90 30,80 40,85 50,70 60,65 70,55 80,50 90,48 100,45"/>
+            </svg>
           </div>
 
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="font-bold text-blue-600">Saldo Previsto</span>
-              <span>R$ 6.000,00</span>
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+              <p class="text-sm text-gray-500">Total de Receitas</p>
+              <h3 class="text-green-600 text-xl font-bold">R$ 2.300,00</h3>
             </div>
-            <div class="barra">
-              <div class="bg-blue-500 h-4 rounded-full w-5/6"></div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+              <p class="text-sm text-gray-500">Total de Despesas</p>
+              <h3 class="text-red-600 text-xl font-bold">R$ 1.100,00</h3>
             </div>
           </div>
         </div>
@@ -167,43 +179,16 @@
       </div>
 
       <div class="card">
-        <h2 class="titulo">Distribuição de Gastos</h2>
+        <h2 class="titulo">Alertas Financeiros</h2>
 
-        <div class="space-y-5 mb-6">
-          <div>
-            <div class="flex justify-between">
-              <span>Moradia</span>
-              <strong>R$ 800,00</strong>
-            </div>
-            <div class="barra mt-2">
-              <div class="bg-red-500 h-4 rounded-full w-3/4"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between">
-              <span>Alimentação</span>
-              <strong>R$ 350,00</strong>
-            </div>
-            <div class="barra mt-2">
-              <div class="bg-yellow-500 h-4 rounded-full w-1/2"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between">
-              <span>Transporte</span>
-              <strong>R$ 120,00</strong>
-            </div>
-            <div class="barra mt-2">
-              <div class="bg-blue-500 h-4 rounded-full w-1/4"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded mb-4">
           <p class="font-bold">Atenção aos gastos</p>
           <p class="text-sm">A categoria alimentação está próxima do limite mensal.</p>
+        </div>
+
+        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded">
+          <p class="font-bold">Previsão positiva</p>
+          <p class="text-sm">Sua economia prevista para os próximos 30 dias é de R$ 1.700,00.</p>
         </div>
       </div>
     </section>
