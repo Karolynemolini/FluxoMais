@@ -1,3 +1,40 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.valor {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.barra {
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  height: 16px;
+}
+
+.transacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
